@@ -1,8 +1,11 @@
-# Python
-backend/venv/
-backend/__pycache__/
-backend/*.pyc
-backend/.env
+# Virtual environment (your venv is named "ai")
+ai/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.env
 
 # Node
 frontend/node_modules/
@@ -10,7 +13,7 @@ frontend/build/
 frontend/.env.local
 frontend/.env.production
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 *.log
