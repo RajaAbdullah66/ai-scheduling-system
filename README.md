@@ -46,7 +46,7 @@ scheduler-project/
 
 ```bash
 # If using git
-git clone <your-repo-url>
+git clone https://github.com/RajaAbdullah66/ai-scheduling-system.git
 cd scheduler-project
 ```
 
@@ -54,15 +54,6 @@ cd scheduler-project
 
 ```bash
 cd backend
-
-# Create a virtual environment (recommended)
-python -m venv venv
-
-# Activate it
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -90,39 +81,6 @@ npm start
 ```
 
 The frontend will open at: **http://localhost:3000**
-
----
-
-## 🌐 How to Deploy
-
-### Frontend → Vercel (Free)
-
-1. Push your project to GitHub.
-2. Go to [vercel.com](https://vercel.com) → **New Project** → Import your repo.
-3. Set **Root Directory** to `frontend`.
-4. Add environment variable:
-   ```
-   REACT_APP_API_URL = https://your-backend-url.railway.app
-   ```
-5. Click **Deploy**. Done!
-
-### Backend → Railway (Free Tier)
-
-1. Go to [railway.app](https://railway.app) → **New Project** → **Deploy from GitHub**.
-2. Select your repo, set **Root Directory** to `backend`.
-3. Railway auto-detects Python. Add a start command:
-   ```
-   uvicorn main:app --host 0.0.0.0 --port $PORT
-   ```
-4. Your backend URL will be something like `https://scheduler-production.railway.app`.
-5. Update the `REACT_APP_API_URL` in Vercel with this URL.
-
-### Backend → Render (Free Tier Alternative)
-
-1. Go to [render.com](https://render.com) → **New Web Service**.
-2. Connect GitHub repo, set root to `backend`.
-3. Build command: `pip install -r requirements.txt`
-4. Start command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
 
 ---
 
