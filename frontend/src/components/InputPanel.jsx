@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const DEFAULTS = {
-  courses:   ['Mathematics','Physics','Chemistry','English','Computer Science','Biology','History','Geography'],
+  courses:   ['Artifical Intelligence','Machine Learning','Data Structures','Cloud Computing','Computer Networking','Software Engineering','Deep Learning','Database Systems'],
   teachers:  ['Dr. Ahmed','Prof. Sara','Dr. Khalid','Ms. Fatima','Mr. Bilal','Dr. Ayesha','Mr. Hassan','Ms. Zara'],
   rooms:     ['Room-A101','Room-B202','Room-C303','Lab-101'],
   timeslots: ['Mon-8AM','Mon-9AM','Mon-10AM','Mon-11AM','Tue-8AM','Tue-9AM','Tue-10AM','Tue-11AM','Wed-8AM','Wed-9AM'],
